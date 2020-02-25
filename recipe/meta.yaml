@@ -1,17 +1,17 @@
 {% set name = "oslo.concurrency" %}
-{% set version = "3.29.1" %}
+{% set version = "4.0.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d5f5ccca934a7e736b934044e1a347da2e139db6e4df3a2ac5dedc15e5287c81
+  sha256: c675c9a57c6f17bd6308cf72d69a671dad8ab6c61ea631215fdd89376a6d5bc7
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -44,7 +44,8 @@ about:
   license: Apache Software
   license_family: APACHE
   license_file: LICENSE
-  summary: The oslo.concurrency library has utilities for safely running multi-thread, multi-process applications using locking mechanisms and for running external processes
+  summary: The oslo.concurrency library has utilities for safely running multi-thread, multi-process applications using locking mechanisms and for running external
+    processes
 
 extra:
   recipe-maintainers:
