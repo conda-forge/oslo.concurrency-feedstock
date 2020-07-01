@@ -12,22 +12,20 @@ source:
 build:
   number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  noarch: python
 
 requirements:
   host:
     - pbr !=2.1.0,>=2.0.0
     - pip
-    - python
+    - python >=3.6
   run:
     - pbr !=2.1.0,>=2.0.0
     - oslo.config >=5.2.0
     - oslo.i18n >=3.15.3
     - oslo.utils >=3.33.0
-    - six >=1.10.0
     - fasteners >=0.7.0
-    - enum34 >=1.0.4  # [py2k]
-    - pip
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -40,8 +38,8 @@ test:
     - oslo_concurrency.watchdog
 
 about:
-  home: https://github.com/openstack/oslo.concurrency
-  license: Apache Software
+  home: https://docs.openstack.org/oslo.concurrency/latest/
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
   summary: The oslo.concurrency library has utilities for safely running multi-thread, multi-process applications using locking mechanisms and for running external processes
