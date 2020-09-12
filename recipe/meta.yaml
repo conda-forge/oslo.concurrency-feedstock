@@ -30,7 +30,6 @@ requirements:
 test:
   imports:
     - oslo_concurrency
-    - oslo_concurrency.fixture.lockutils
     - oslo_concurrency.lockutils
     - oslo_concurrency.opts
     - oslo_concurrency.processutils
