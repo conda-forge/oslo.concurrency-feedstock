@@ -1,5 +1,5 @@
 {% set name = "oslo.concurrency" %}
-{% set version = "4.4.1" %}
+{% set version = "4.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6449cfbd15dbab20cf9907bbb2f057e0e5267f97161223d2b516cc8226b17ec3
+  sha256: 99f7a8da1d6d623bb1a218211d071797718004e1a2262a8d66fcae7013bee6c0
 
 build:
   number: 0
