@@ -1,11 +1,11 @@
-About oslo.concurrency
-======================
+About oslo.concurrency-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oslo.concurrency-feedstock/blob/main/LICENSE.txt)
 
 Home: https://docs.openstack.org/oslo.concurrency/latest/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oslo.concurrency-feedstock/blob/main/LICENSE.txt)
 
 Summary: The oslo.concurrency library has utilities for safely running multi-thread, multi-process applications using locking mechanisms and for running external processes
 
