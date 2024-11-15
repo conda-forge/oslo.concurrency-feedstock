@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ab9d79935119e2bcb0edeb7f8587236af7844244ab87153720b8ca8437d1be02
 
 build:
@@ -18,7 +18,8 @@ requirements:
   host:
     - pbr !=2.1.0,>=2.0.0
     - pip
-    - python >=3.8
+    - setuptools
+    - python 3.8
   run:
     - pbr !=2.1.0,>=2.0.0
     - oslo.config >=5.2.0
