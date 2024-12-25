@@ -10,7 +10,7 @@ source:
   sha256: ab9d79935119e2bcb0edeb7f8587236af7844244ab87153720b8ca8437d1be02
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   noarch: python
 
@@ -19,16 +19,18 @@ requirements:
     - pbr !=2.1.0,>=2.0.0
     - pip
     - setuptools
-    - python 3.9
+    - python {{ python_min }}
   run:
     - pbr !=2.1.0,>=2.0.0
     - oslo.config >=5.2.0
     - oslo.i18n >=3.15.3
     - oslo.utils >=3.33.0
     - fasteners >=0.7.0
-    - python >=3.9
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - oslo_concurrency
     - oslo_concurrency.lockutils
