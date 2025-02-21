@@ -1,13 +1,13 @@
 {% set name = "oslo.concurrency" %}
-{% set version = "7.0.0" %}
+{% set version = "7.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0cb373ee2a1320241f92de05a8d1cf4b4786065eef61ea25d3c8286a29fa4765
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/oslo_concurrency-{{ version }}.tar.gz
+  sha256: df8a877f8002b07d69f1d0e70dbcef4920d39249aaa62e478fad216b3dd414cb
 
 build:
   number: 0
