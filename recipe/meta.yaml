@@ -1,5 +1,7 @@
 {% set name = "oslo.concurrency" %}
 {% set version = "7.6.0" %}
+{% set python_min = "3.11" %}
+
 
 package:
   name: {{ name|lower }}
